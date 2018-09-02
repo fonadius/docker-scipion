@@ -1,0 +1,1 @@
+sudo docker run --device=/dev/dri/card0:/dev/dri/card0 --volume=/tmp/.X11-unix:/tmp/.X11-unix --volume=$HOME:/home/hostHome --privileged --name=scipion --net=host --env="DISPLAY" scipion/dev
