@@ -10,9 +10,9 @@ RUN useradd -ms /bin/bash matmat
 USER matmat
 WORKDIR /home/matmat
 
-RUN git clone https://github.com/fonadius/scipion.git /home/matmat/scipion && \
+RUN git clone https://github.com/JaviMota/scipion.git /home/matmat/scipion && \
     cd /home/matmat/scipion/ && \
-    git checkout newDefModel
+    git checkout stigmator
     
 RUN mkdir /home/matmat/.config/ && \
     mkdir /home/matmat/.config/scipion/
