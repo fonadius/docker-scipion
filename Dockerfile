@@ -21,6 +21,13 @@ COPY ./scipion.conf /home/matmat/.config/scipion/scipion.conf
 
 RUN cd /home/matmat/scipion && \
     ./scipion config && \
-    ./scipion install -j 4 --no-opencv --no-scipy
+    ./scipion install -j 4 --no-opencv --no-scipy && \
+    ./scipion install ctffind --no-opencv && \
+    ./scipion install ctffind4 --no-opencv && \
+    ./scipion install gctf --no-opencv && \
+    ./scipion install unblur --no-opencv && \
+    ./scipion install summovie --no-opencv && \
+    ./scipion install motioncorr --no-opencv && \
+    ./scipion install motioncor2 --no-opencv
 
 CMD terminator
